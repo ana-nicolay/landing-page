@@ -1,28 +1,35 @@
 *{
 	margin: 0;
   	padding: 0;
-	font-size: 21px;
+	font-size: 30px;
 	font-family: Roboto, Bebas Neue, Arial, sans-serif;
 }
 
+body, html{
+	height: 100%;
+}
+
 h3{
-	font-size: 30px;
-	font-family: Dancing Script, Pacifico, Cookie;
+	font-size: 42px;
+	font-family: Caveat, Dancing Script, Pacifico, Cookie;
 }
 
 p{
-	margin-top: 16px;
+	margin-top: 18px;
+	font-size: 24px;
 }
 
 
 .hero-image{
 	background-image: url("vitrine-breads.jpg");
 	background-color: #ccc;
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	position:  relative;
-	height: 100vh;
+	height: 100%;
 }
 
 #hero-box{
@@ -34,7 +41,7 @@ p{
   	/*display: flex;
  	flex-direction: column;
  	justify-content: center;*/  	
-  	border:  1px solid;
+  	border: none;
   	border-color: rgba(90, 90, 90, 0.30);
   	background-color: rgba(90, 90, 90, 0.15);
   	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
@@ -50,8 +57,11 @@ p{
 
 #hero-text{
 	font-size: 36px;
-	text-align: center;
 	position: relative;
+	text-align: center;
+}
+.store{
+	background-color: rgb(30, 30, 30);
 }
 
 .product-wrap{
@@ -64,38 +74,50 @@ p{
     justify-content: center;
 }
 
-.product-image{
-	background-image: url("blueberry-muffins.jpg");
+.image-one{
+	background-image: url("bread.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size:  cover;
 	height: 50vh;
-	width: 60%;
+	width: 75%;
+}
+
+.image-two{
+	background-image: url("blueberry-muffins.jpg");	
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:  cover;
+	height: 50vh;
+	width: 75%;
 }
 
 .product-text{
-	width: 40%;
+	color:  #f1f1f1;
+	width: 25%;
+	height: 50vh;
 	padding: 30px;
-
 }
 
 .btn-subscribe{
 	position:  relative;
-	margin: 25% auto;
-	width:  20%;
+	margin: 24px;
+	width:  50%;
 	background-color: #f1f1f1;
 	color: rgba(60, 60, 60, 1.0);
- 	font-size: 16px;
-	padding: 16px 30px;
+	padding: 16px 24px;
 	border: 3px rgba(60, 60, 60, 1.0);
 	cursor: pointer;
 	border-radius: 120px;
 	text-align: center;
+	box-shadow: 12px 6px 6px rgba(0, 0, 0, 0.1);
 }
 
 .btn-subscribe:hover {
   background-color: rgba(60, 60, 60, 1.0);
   color: white;
+  border:  2px solid;
+  border-color: #f1f1f1;
 }
 
 #myStoreDiv{order: 1;}
@@ -103,14 +125,11 @@ p{
 #myProductDiv {order: 4;}
 #myProductTextDiv {order: 3;}
 
-.product-wrap#cadastro{
-	margin-top: 15%;
-}
-
 form {
-	background: rgba(60, 60, 60, 1.0);
+	background-color: rgba(60, 60, 60, 0.6);
 	border-radius: 30px;
-	margin:  auto;
+	margin:  15% auto;
+	padding:  30px;
 	width:  600px;
 	display:  grid;
 	box-shadow: 9px 6px 6px rgba(0, 0, 0, 0.1);
@@ -121,7 +140,15 @@ input{
 	margin:  24px auto;
 	heigth:  30px;
 	border:  3px #333;
-	border-radius: 12px;
+	border-radius: 36px;
 	padding:  24px;
 	box-shadow: 9px 6px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer{
+	text-align: center;
+    align-items: center;
+    background-color: rgba(60, 60, 60, 1.0);
+  	color: white;
+  	padding: 24px;
 }
