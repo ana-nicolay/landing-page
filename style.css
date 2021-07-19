@@ -1,27 +1,36 @@
 *{
 	margin: 0;
   	padding: 0;
-	font-size: 30px;
 	font-family: Roboto, Bebas Neue, Arial, sans-serif;
+	font-size: 21px;
 }
 
 body, html{
 	height: 100%;
 }
 
+@font-face {
+   font-family: Dancing;
+   src: url(fonts/DancingScript.ttf);
+}
+
+@font-face {
+   font-family: Roboto;
+   src: url(fonts/Roboto-Regular.ttf);
+}
+
 h3{
 	font-size: 42px;
-	font-family: Caveat, Dancing Script, Pacifico, Cookie;
+	font-family: Dancing, Pacifico, Cookie;
 }
 
 p{
 	margin-top: 18px;
-	font-size: 24px;
 }
 
 
 .hero-image{
-	background-image: url("vitrine-breads.jpg");
+	background-image: url("img/vitrine-breads.jpg");
 	background-color: #ccc;
 	/* Create the parallax scrolling effect */
 	background-attachment: fixed;
@@ -49,13 +58,14 @@ p{
 }
 
 #hero-title{
-	font-family: Dancing Script, Pacifico, Cookie;
+	font-family: Dancing, Pacifico, Cookie;
 	font-size: 108px;
 	text-align: center;
 	position: relative;
 }
 
 #hero-text{
+	font-family: Bebas Neue;
 	font-size: 36px;
 	position: relative;
 	text-align: center;
@@ -75,7 +85,7 @@ p{
 }
 
 .image-one{
-	background-image: url("bread.jpg");
+	background-image: url("img/bread.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size:  cover;
@@ -84,7 +94,7 @@ p{
 }
 
 .image-two{
-	background-image: url("blueberry-muffins.jpg");	
+	background-image: url("img/blueberry-muffins.jpg");	
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size:  cover;
@@ -100,6 +110,8 @@ p{
 }
 
 .btn-subscribe{
+	font-family: Bebas Neue;
+	font-size: 24px;
 	position:  relative;
 	margin: 24px;
 	width:  50%;
