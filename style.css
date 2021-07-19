@@ -28,6 +28,29 @@ p{
 	margin-top: 18px;
 }
 
+a:link, a:visited {
+	background-color: #f1f1f1;
+	color: rgb(60, 60, 60);
+	font-family: Bebas Neue;
+	font-size: 24px;
+	padding: 16px 24px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+	border-radius: 120px;
+	box-shadow: 12px 6px 6px rgba(0, 0, 0, 0.1);
+	position:  relative;
+	margin: 24px;
+	width:  50%;
+}
+
+a:hover, a:active {
+  background-color: rgb(60, 60, 60);
+  color: #f1f1f1;
+  border:  2px solid;
+  border-color: #f1f1f1;
+}
 
 .hero-image{
 	background-image: url("img/vitrine-breads.jpg");
@@ -109,7 +132,7 @@ p{
 	padding: 30px;
 }
 
-.btn-subscribe{
+/*.btn-subscribe{
 	font-family: Bebas Neue;
 	font-size: 24px;
 	position:  relative;
@@ -131,6 +154,7 @@ p{
   border:  2px solid;
   border-color: #f1f1f1;
 }
+*/
 
 #myStoreDiv{order: 1;}
 #myStoreTextDiv {order: 2;}
